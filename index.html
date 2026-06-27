@@ -212,6 +212,32 @@ Je recommande à 100%.
 
 </section>
 
+<section id="booking">
+
+<h2>Réservation</h2>
+
+<div class="booking-box">
+
+<label>Type de séance</label>
+<select id="service">
+    <option value="80">Portrait - 80€</option>
+    <option value="120">Couple - 120€</option>
+    <option value="150">Famille - 150€</option>
+    <option value="650">Mariage - 650€</option>
+</select>
+
+<label>Date</label>
+<input type="date" id="date">
+
+<label>Nom</label>
+<input type="text" id="name">
+
+<div id="paypal-button-container"></div>
+
+</div>
+
+</section>
+  
 <section id="contact">
 
 <h2>Contact</h2>
@@ -255,6 +281,8 @@ Envoyer
 </footer>
 
 <script src="js/script.js"></script>
+
+<script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=EUR"></script>
 
 </body>
 </html>
