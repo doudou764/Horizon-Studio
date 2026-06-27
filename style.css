@@ -366,5 +366,11 @@ section{
 h1,h2,h3{
   letter-spacing:-0.5px;
 }
+
+.card{
+  transform:translateY(40px);
+  opacity:0;
+  transition:0.8s;
+}
    
 }
