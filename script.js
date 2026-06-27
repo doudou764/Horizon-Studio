@@ -118,3 +118,46 @@ lightbox.onclick=()=>{
     lightbox.classList.remove("open");
 
 };
+
+paypal.Buttons({
+
+    createOrder: function(data, actions) {
+
+        const price = document.getElementById("service").value;
+
+        return actions.order.create({
+            purchase_units: [{
+                amount: {
+                    value: price
+                }
+            }]
+        });
+
+    },
+
+    onApprove: function(data, actions) {
+
+        return actions.order.capture().then(function(details) {
+
+            const name = document.getElementById("name").value;
+            const date = document.getElementById("date").value;
+            const service = document.getElementById("service").value;
+
+            alert(
+                "Paiement réussi ✔\n" +
+                "Merci " + name + "\n" +
+                "Séance confirmée le " + date
+            );
+
+            console.log("Réservation :", {
+                name,
+                date,
+                service,
+                orderID: data.orderID
+            });
+
+        });
+
+    }
+
+}).render('#paypal-button-container');
