@@ -316,4 +316,29 @@ h2{
     font-size:34px;
 }
 
+.booking-box{
+    max-width:600px;
+    margin:auto;
+    background:rgba(255,255,255,.05);
+    padding:40px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.1);
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.booking-box select,
+.booking-box input{
+    padding:15px;
+    border-radius:10px;
+    border:none;
+    background:#181818;
+    color:white;
+}
+
+#paypal-button-container{
+    margin-top:20px;
+}
+   
 }
