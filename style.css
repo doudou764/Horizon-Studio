@@ -340,5 +340,31 @@ h2{
 #paypal-button-container{
     margin-top:20px;
 }
+
+:root{
+  --bg:#0b0b0f;
+  --card:rgba(255,255,255,0.06);
+  --stroke:rgba(255,255,255,0.1);
+  --text:#ffffff;
+  --muted:#b3b3b3;
+  --accent:#6d4cff;
+  --accent2:#00c3ff;
+}
+
+body{
+  margin:0;
+  font-family:Poppins,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  overflow-x:hidden;
+}
+
+section{
+  padding:100px 10%;
+}
+
+h1,h2,h3{
+  letter-spacing:-0.5px;
+}
    
 }
