@@ -1,10 +1,10 @@
-body{
-  background:red;
-}
-
 /* ===========================
    RESET
 =========================== */
+
+body{
+  background:red;
+}
 
 *{
     margin:0;
