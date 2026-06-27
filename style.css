@@ -404,4 +404,49 @@ h1,h2,h3{
   letter-spacing:6px;
   text-transform:uppercase;
 }
+   @media (max-width: 768px){
+
+.hero-content h1{
+  font-size:38px;
+  letter-spacing:3px;
+  text-align:center;
 }
+
+.hero-content p{
+  font-size:14px;
+  padding:0 10px;
+}
+
+.hero-buttons{
+  flex-direction:column;
+  gap:15px;
+}
+
+nav ul{
+  display:none;
+}
+
+.btn, .btn2{
+  width:100%;
+  text-align:center;
+}
+
+.gallery{
+  grid-template-columns:1fr;
+}
+
+.cards{
+  grid-template-columns:1fr;
+}
+
+.booking-box{
+  padding:20px;
+}
+   html, body {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, a {
+  touch-action: manipulation;
+}
+ }
