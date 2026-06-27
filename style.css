@@ -399,4 +399,9 @@ h1,h2,h3{
     opacity:1;
     transform:translateY(0);
   }
+
+.hero-content h1{
+  letter-spacing:6px;
+  text-transform:uppercase;
+}
 }
