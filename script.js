@@ -161,3 +161,31 @@ paypal.Buttons({
     }
 
 }).render('#paypal-button-container');
+
+// =============================
+// VIDEO SCROLL SWITCH
+// =============================
+
+const video = document.getElementById("bgVideo");
+
+const videos = [
+  "images/hero1.mp4",
+  "images/hero2.mp4",
+  "images/hero3.mp4"
+];
+
+window.addEventListener("scroll", () => {
+
+  const scroll = window.scrollY;
+
+  let index = 0;
+
+  if(scroll > 300) index = 1;
+  if(scroll > 800) index = 2;
+
+  if(video && video.src.indexOf(videos[index]) === -1){
+    video.src = videos[index];
+    video.play();
+  }
+
+});
